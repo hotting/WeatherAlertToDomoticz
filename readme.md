@@ -7,10 +7,14 @@ This script receives a message from the KNMI via MQTT that new data files are av
 A loop checks every 5 minutes whether there is a new file locally and if so, this file is processed and displayed in Domoticz. If there is no new data file, the device in Domoticz will be updated once an hour. This is to prevent the device from showing a red bar
 
 # Explanation
-The weather warnings are displayed in Domoticz in an alert device (general alert)
+The weather warnings are displayed in Domoticz in an alert device (general alert). It is necessary that this device is present before starting the script. You must enter the ID of this device in the cfg file.
+
+Place the files WeatherAlertToDomoticz.py and WeatherAlertToDomoticz.cfg in the same directory and then run the script.
+By default, the log file is placed in the same directory as the script. If you want to place this log file in the common log directory, you can specify this in the cfg file. This is necessary when you use the log2ram program
 
 The necessary information for the script to work is specified in the cfg file
 “WeatherAlertToDomoticz.cfg”
+
 The cfg file indicates what must be entered and how to arrive at this value
 Only when “your own value” is stated is it necessary to adjust this value. For all other values, the program works with the value already specified and adjustments can lead to different behavior. It is therefore recommended to leave this unchanged
 The script requires Python 3.9 or higher
