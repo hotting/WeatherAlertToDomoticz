@@ -16,7 +16,7 @@ Only when “your own value” is stated is it necessary to adjust this value. F
 The script requires Python 3.9 or higher
 
 # cfg file
-#### [global]
+### [global]
 + waiting time between script executions in seconds default 300 (5 min)
 
     `wait_execution = 300`
@@ -31,7 +31,7 @@ the default path for log files on the raspberry is /var/log/
     
     `logPath = `
 
-#### [MQTT_settings]
+### [MQTT_settings]
 + Address of the mqtt broker
 
     `broker_domain = mqtt.dataplatform.knmi.nl`
@@ -55,7 +55,7 @@ the default path for log files on the raspberry is /var/log/
 
     `PROTOCOL = mqtt_client.MQTTv5`
 
-#### [dataplatform_knmi]
+### [dataplatform_knmi]
 + A token is required to gain access to the dataplatform. Obtain your token at: [https://developer.dataplatform.knmi.nl/open-data-api#token](https://developer.dataplatform.knmi.nl/open-data-api#token)
 
     `api_key = your own value`
@@ -66,7 +66,7 @@ the default path for log files on the raspberry is /var/log/
 
     `dataset_version = 1.0`
 
-#### [domoticz]
+### [domoticz]
 + The authorization requirements can be found at
  [https://www.domoticz.com/wiki/Domoticz_API/JSON_URL%27s#Authorization](https://www.domoticz.com/wiki/Domoticz_API/JSON_URL%27s#Authorization)
  if you create a user **domoticz** in domoticz with the password **class**. Then you can enter the following authentication token => "Basic ZG9tb3RpY3o6Y2xhc3M="
